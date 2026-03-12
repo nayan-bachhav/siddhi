@@ -1,0 +1,230 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+color:white;
+background:#1c3b4a;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+position:relative;
+overflow:hidden;
+}
+
+/* IMAGE BACKGROUND */
+
+.hero-img{
+position:absolute;
+width:100%;
+height:100%;
+object-fit:cover;
+top:0;
+left:0;
+z-index:-3;
+}
+
+/* DARK OVERLAY */
+
+.overlay{
+position:absolute;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.45);
+z-index:-2;
+}
+
+/* TITLE */
+
+.title span{
+display:block;
+font-size:70px;
+font-family:'Cinzel',serif;
+letter-spacing:4px;
+}
+
+.title p{
+font-size:24px;
+margin:10px 0;
+}
+
+/* LANTERNS */
+
+.lanterns{
+position:absolute;
+width:100%;
+height:100%;
+top:0;
+left:0;
+pointer-events:none;
+}
+
+.lantern{
+width:50px;
+height:70px;
+background:linear-gradient(#ff8cc6,#ffb7d7);
+border-radius:20px;
+position:absolute;
+bottom:-120px;
+animation:float 14s linear infinite;
+}
+
+.lantern:nth-child(1){left:10%;}
+.lantern:nth-child(2){left:35%;animation-delay:3s;}
+.lantern:nth-child(3){left:65%;animation-delay:6s;}
+.lantern:nth-child(4){left:90%;animation-delay:9s;}
+@keyframes float{
+
+0%{transform:translateY(0)}
+100%{transform:translateY(-900px)}
+
+}
+
+/* SECTIONS */
+
+.section{
+padding:80px 20px;
+text-align:center;
+}
+
+/* COUPLE SECTION */
+
+.couple-section{
+padding:80px 20px;
+background:#f5efe6;
+text-align:center;
+color:#333;
+}
+
+.couple-title{
+font-family:'Cinzel',serif;
+font-size:36px;
+margin-bottom:40px;
+}
+
+.couple-container{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:40px;
+max-width:1000px;
+margin:auto;
+flex-wrap:wrap;
+}
+
+.couple-container img{
+width:350px;
+max-width:100%;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,0.25);
+}
+
+.couple-text{
+max-width:400px;
+font-size:18px;
+line-height:1.7;
+}
+
+@media (max-width:768px){
+
+.couple-container{
+flex-direction:column;
+}
+
+.couple-text{
+font-size:16px;
+}
+
+}
+
+/* BLESSING */
+
+.blessing{
+background:#2c6f73;
+}
+
+.blessing h2{
+font-family:'Cinzel';
+font-size:32px;
+margin-bottom:20px;
+}
+
+/* EVENTS */
+
+.events{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+padding:60px 5%;
+background:#3b8a87;
+}
+
+/* CARDS */
+
+.card{
+background:#f6eddc;
+color:#3b5c52;
+border-radius:20px;
+padding:35px 20px;
+box-shadow:0 8px 25px rgba(0,0,0,.25);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+font-family:'Cinzel';
+font-size:26px;
+margin-bottom:10px;
+}
+
+/* MAP BUTTON */
+
+.map-btn{
+display:inline-block;
+margin-top:15px;
+padding:10px 18px;
+background:#3b8a87;
+color:white;
+text-decoration:none;
+border-radius:20px;
+}
+
+.map-btn:hover{
+background:#2c6f73;
+}
+
+/* FOOTER */
+
+footer{
+padding:50px 20px;
+background:#1c3b4a;
+text-align:center;
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+.title span{
+font-size:40px;
+}
+
+.title p{
+font-size:18px;
+}
+
+}
