@@ -148,6 +148,46 @@ font-size:16px;
 
 }
 
+/* COUNTDOWN SECTION */
+
+.countdown-section{
+padding:80px 20px;
+background:#fff7f2;
+text-align:center;
+}
+
+.countdown-section h2{
+font-family:'Cinzel',serif;
+font-size:36px;
+margin-bottom:40px;
+color:#333;
+}
+
+.countdown{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.time{
+background:#f6eddc;
+padding:25px 35px;
+border-radius:15px;
+box-shadow:0 6px 20px rgba(0,0,0,0.2);
+}
+
+.time span{
+font-size:40px;
+font-weight:bold;
+color:#3b5c52;
+display:block;
+}
+
+.time p{
+font-size:16px;
+color:#333;
+}
 /* BLESSING */
 
 .blessing{
