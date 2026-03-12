@@ -58,6 +58,36 @@ Nayan & Sakshii begin their new chapter.
 
 </section>
 
+<!-- COUNTDOWN -->
+<section class="countdown-section">
+
+<h2>Wedding Countdown</h2>
+
+<div class="countdown">
+
+<div class="time">
+<span id="days">00</span>
+<p>Days</p>
+</div>
+
+<div class="time">
+<span id="hours">00</span>
+<p>Hours</p>
+</div>
+
+<div class="time">
+<span id="minutes">00</span>
+<p>Minutes</p>
+</div>
+
+<div class="time">
+<span id="seconds">00</span>
+<p>Seconds</p>
+</div>
+
+</div>
+
+</section>
 <!-- BLESSING -->
 <section class="section blessing">
 
@@ -81,7 +111,7 @@ Nagai Mata  & Saptshrungi Mata
 <p>7pm Onwards</p>
 
 <a class="map-btn"
-href="https://www.google.com/maps/search/?api=1&query=Navibej+Village+Kalwan"
+href="https://www.google.com/maps/place/Manish+Creative+Hub/@20.5162005,74.0735464,17z/data=!4m7!3m6!1s0x3bde7b50cb930a2b:0xee653fcf057917f0!4b1!8m2!3d20.5162005!4d74.0735464!16s%2Fg%2F11hym18nt2!18m1!1e1?entry=ttu&g_ep=EgoyMDI2MDMwOS4wIKXMDSoASAFQAw%3D%3D"
 target="_blank">
 📍 View Location
 </a>
@@ -93,11 +123,11 @@ target="_blank">
 
 <h3>Mandav</h3>
 <p>Saturday Morning</p>
-<p>Navibej</p>
+<p>Navibej,Kalwan </p>
 <p>7am Onwards</p>
 
 <a class="map-btn"
-href="https://www.google.com/maps/search/?api=1&query=Navibej+Village+Kalwan"
+href="https://www.google.com/maps/place/Manish+Creative+Hub/@20.5162005,74.0735464,17z/data=!4m7!3m6!1s0x3bde7b50cb930a2b:0xee653fcf057917f0!4b1!8m2!3d20.5162005!4d74.0735464!16s%2Fg%2F11hym18nt2!18m1!1e1?entry=ttu&g_ep=EgoyMDI2MDMwOS4wIKXMDSoASAFQAw%3D%3D"
 target="_blank">
 📍 View Location
 </a>
@@ -109,11 +139,11 @@ target="_blank">
 
 <h3>Lagn</h3>
 <p>Sunday, May 9th 2026</p>
-<p>Nakshtra Lawns, Kalwan</p>
+<p>Sai Lawns, Kalwan</p>
 <p>1pm Onwards</p>
 
 <a class="map-btn"
-href="https://www.google.com/maps/search/?api=1&query=Nakshtra+Lawns+Kalwan"
+href="https://www.google.com/maps/search/?api=1&query=Sai+Lawns+Kalwan+Maharashtra"
 target="_blank">
 📍 View Location
 </a>
@@ -128,6 +158,34 @@ target="_blank">
 <h2>We look forward to celebrating with you</h2>
 
 </footer>
+   <script>
 
+const weddingDate = new Date("May 9, 2026 13:00:00").getTime();
+
+const timer = setInterval(function(){
+
+const now = new Date().getTime();
+
+const distance = weddingDate - now;
+
+const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+document.getElementById("days").innerHTML = days;
+document.getElementById("hours").innerHTML = hours;
+document.getElementById("minutes").innerHTML = minutes;
+document.getElementById("seconds").innerHTML = seconds;
+
+if(distance < 0){
+clearInterval(timer);
+document.querySelector(".countdown").innerHTML = "The Wedding Day is Here!";}},1000);
+
+</script>
+   
 </body>
 </html>
